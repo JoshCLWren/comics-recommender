@@ -1,0 +1,5 @@
+pandas==1.5.3
+gspread==5.10.0
+google-auth==2.22.0
+google-api-python-client==2.86.0
+python-dotenv==1.0.0

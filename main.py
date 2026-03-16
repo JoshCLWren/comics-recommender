@@ -187,7 +187,7 @@ def update_recommendations(gc, spreadsheet_id):
             data_values = recommendations.values.tolist()
             results_sheet.update('A2', data_values)
         
-        logger.info(f"Recommendations updated successfully")
+        logger.info("Recommendations updated successfully")
         return True
     except Exception as e:
         logger.error(f"Error updating recommendations: {e}")
@@ -203,7 +203,7 @@ def run_service():
         logger.error("SPREADSHEET_ID environment variable is required")
         return
     
-    logger.info(f"Starting comics recommendation service")
+    logger.info("Starting comics recommendation service")
     logger.info(f"Monitoring spreadsheet ID: {spreadsheet_id}")
     logger.info(f"Update check interval: {check_interval} seconds")
     
